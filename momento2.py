@@ -22,8 +22,8 @@ def mostrar_pagos():
 
 def buscar_por_nombre (nombre):
     encontrados = [P for p in pagos if p["nombre."].lower()==nombre.lower()]
-    if encontrados 
-    print (f"\n resultados para '{nombre}':")
+    if encontrados: 
+        print (f"\n resultados para '{nombre}':")
     for pago in encontrados:
         print (f"- {pago ['metodo']} - ${pago['monto']}")
     else:
